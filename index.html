@@ -1,54 +1,167 @@
 <html>
 <head>
-    <title>portefolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./res/finger print.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <a href="#about">about</a>
-        <a href="#experience">experience</a>
-        <a href="#Formation">Formation</a>
-        <a href="#contact">contact</a>
-    </nav>
-    <section id="about">
-        <h1>My name is :</h1><br>
-        <h4>CHARFI Malek</h4>
-        <center>
-            <img src="./res/web.jpg" width="100" height="50">
-            </center>
-        <p>ADRESSE : Résidence Dalia B"Sana" N°6 - 2080 - Ariana, Tunisie <br>
-            DATE DE NAISSANCE : OCT 89 <br>
-            PERMIS DE CONDUIRE : B <br>
-        </p>
-    </section>
-    <section id="experience">
-        <p>
-           <ol>
-               <li>OUVRIER STAGIAIRE Groupe Chimique Tunisien | JUI 2010 - JUIL 2010 </li>
-               <li>TECHNICIEN STAGIAIRE Groupe Chimique Tunisien | JUI 2011 - JUIL 2011 </li>
-               <li>TELEOPERATEUR STAGIAIRE O2 Call Center | JAN 2012 - JUI 2012 </li>
-               <li>DÉVELOPPEUR INFORMATIQUE Quality Softwar Solution | JAN 2013 - JAN 2014 </li>
-               <li>TECHNICIEN SUPÉRIEUR EN RÉSEAUX INFORMATIQUES AlphaCom Technologies | FEV 2014 - FEV 2015</li>
-           </ol>
-        </p>
-    </section>
-    <section id="formation">
         <ul>
-            <li>DIPLÔME DE BACCALAURÉAT EN SCIENCES INFORMATIQUES </li>
-            <li>Lycée Houcine Bouzayén, Gafsa | 2009 PROFESSIONNELLES-LICENCE EN RÉSEAUX INFORMATIQUE</li>
-            <li>FORMATION EN EDUCATION FINANCIÈRE</li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Formation">Formation</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#Contact">Contact</a></li>
         </ul>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8FqZZrbnwkM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </nav>
+    <div class="profil">
+        <div class="imagee">
+            <img src="./res/me.jpg" width="150" height="150">
+        </div>
+        <div class="description">
+            <h4><i>I am an experienced chief administrator manager seeking a full-time position in the management field, where I can apply my knowledge and skills for continuous improvement.</i></h4>
+        </div>
+    </div>
+        <div id="empty">
+        </div>
+    <section id="About">
+        <div class="proskills">
+            <h3><i>My professional skills:</i></h3>
+                <ul id ="proskills" type="square">
+                    <li>Project management</li>
+                    <li>Filing / paper management</li>
+                    <li>Typing</li>
+                    <li>Customer service skills</li>
+                    <li>Flexibility</li>
+                    <li>Communication skills</li>
+                    <li>Network Wiring</li>
+                </ul>
+        </div>
+        <div class="persoskills">
+                <h3><i>My personal skills:</i></h3>
+                <ul id="persoskills" type="disc">
+                    <li>Creative spirit</li>
+                    <li>Reliable and professional</li>
+                    <li>Organized</li>
+                    <li>Time management</li>
+                    <li>Team player</li>
+                    <li>Fast learner</li>
+                    <li>Motivated</li>
+                </ul>
+        </div>
     </section>
-    <section id="contact">
-        Num de tel: +216 22 217 438<br>
-        Adresse mail: Charfi95@gmail.com
-        <tex
+    <div id="empty2">
+    </div>
+    <section id="Formation">
+            <div class="card" style="width: 18rem;">
+                <img src="./res/formation.png" class="card-img-top" alt="formation">
+                <div class="card-body">
+                    Bachelor's degree in computer science: High School Houcine Bouzayen, Gafsa | 2009
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./res/formation.png" class="card-img-top" alt="formation">
+                <div class="card-body">
+                    Applied license in computer networks Computer and Communication Technology:Higher Institute Of Applied Sciences And Tchnology Of Gafsa | 2012
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./res/formation.png" class="card-img-top" alt="formation">
+                <div class="card-body">
+                    FINANCIAL EDUCATION TRAINING: Merycorps | JAN 2014 - FEB 2014
+                </div>
+            </div>
     </section>
-    <footer>
-        <h3>Réseaux sociaux:</h3>
-        <i>fb.me/charfi.malek.01</i><br>
-        <i>instagram.com/charfimalek/</i>
-    </footer>
-
+    <div id="empty3">
+    </div>
+    <section id="Experience">
+        <div>
+            Trainee worker: Tunisian Chemical Group | JUN 2010 - JUL 2010
+        </div>
+        <div>
+            Trainee technician:Tunisian Chemical Group | JUN 2011 - JUL 2011
+        </div>
+        <div>
+            Teleoperator trainee:O2 Call Center | JAN 2012 - JUN 2013
+        </div>
+        <div>
+            IT Developer:Quality Softwar Solution | JAN 2013 - JAN 2014
+        </div>
+        <div>
+            Senior computer network technician: AlphaCom Technologies |  FEB 2014 - FEB 2015
+        </div>
+        <div>
+            Technical commercial:  Private Company|  FEB 2016 - MAY 2016
+        </div>
+        <div>
+            CONVEYOR / PROJECT MANAGER: Total Aviation - Tunis Carthage Airport |  JUN 2016 - DEC 2019
+        </div>
+    </section>
+    <div id="empty4">
+    </div>
+    <section id="Contact">
+        <form>
+            <table>
+                <tr>
+                    <th>First name:</th>
+                    <td><input type="text" name="First name:"></td>
+                </tr>
+                <tr>
+                    <th>Last name:</th>
+                    <td><input type="text" name="Last name:"></td>
+                </tr>
+                <tr>
+                    <th>Phone number:</th>
+                    <td><input type="number" name="Phone number"></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="email" name="Usermail"></td>
+                </tr>
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" name="Password"></td>
+                </tr>
+                <tr>
+                    <th>Birth Date:</th>
+                    <td><input type="date" name="birth day"></td>
+                </tr>
+                <tr>
+                    <th>Adresse:</th>
+                    <td><textarea></textarea></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="submit" name="Send"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    <div id="empty5">
+    </div>
+    <div class="footer">
+        <div class="sections">
+            <div class="footerborder">
+                <span><i class="fa fa-phone"></i> &nbsp; +216 22 217 438</span> <br>
+                <span><i class="fa fa-envelope"></i> &nbsp;Charfi95@gmail.com </span><br>
+                <a href="https://fb.me/charfi.malek.01" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true" ></i></a> 
+                <a href="https://instagram.com/charfimalek" target="_blank"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/Charfi01" target="_blank"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </div>
+            <div class="info">
+                ADDRESS : Residence Dalia B"Sana" N°6 - 2080 - Ariana, Tunisia <br>
+                DATE OF BIRTH : OCT 89 <br>
+                DRIVER'S LICENCE : B
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; Coding | designed by CHARFI Malek 
+        </div>
+    </div>
 </body>
 </html>
