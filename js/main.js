@@ -1,4 +1,4 @@
-let carts = document.querySelectorAll ('.add-cart');
+let carts = document.querySelectorAll('.add-cart');
 
 let products = [
     {
@@ -27,25 +27,25 @@ let products = [
     },
 ];
 
-for (let i= 0; i< carts.length; i++ ) {
-    carts[i].addEventListener ('click', () => {
-        cartNumbers (products[i]);
-        totalCost (products[i])
+for (let i = 0; i < carts.length; i++) {
+    carts[i].addEventListener('click', () => {
+        cartNumbers(products[i]);
+        totalCost(products[i])
     })
 }
 
-function onLoadCartNumbers () {
-    let productNumbers = localStorage.getItem ('cartNumbers');
+function onLoadCartNumbers() {
+    let productNumbers = localStorage.getItem('cartNumbers');
     if (productNumbers) {
-        document.querySelector('.cart span').textContent = productNumbers ;
+        document.querySelector('.cart span').textContent = productNumbers;
 
     }
 }
 
-function cartNumbers (products) {
-    
-    let productNumbers = localStorage.getItem ('cartNumbers');
-    productNumbers= parseInt (productNumbers);
+function cartNumbers(products) {
+
+    let productNumbers = localStorage.getItem('cartNumbers');
+    productNumbers = parseInt(productNumbers);
 
     if (productNumbers) {
         localStorage.setItem('cartNumbers', productNumbers + 1);
@@ -58,10 +58,10 @@ function cartNumbers (products) {
     setItems(products);
 }
 
-function setItems (products) {
-   let cartItems = localStorage.getItem ('productsInCart');
-   cartItems = JSON.parse(cartItems);
-   
+function setItems(products) {
+    let cartItems = localStorage.getItem('productsInCart');
+    cartItems = JSON.parse(cartItems);
+
     if (cartItems != null) {
 
         if (cartItems[products.tag] == undefined) {
@@ -74,23 +74,23 @@ function setItems (products) {
     } else {
         products.inCart = 1;
         cartItems = {
-          [products.tag]: products
+            [products.tag]: products
         }
     }
     localStorage.setItem("productsInCart", JSON.stringify
-    (cartItems ));
+        (cartItems));
 }
 
-function totalCost (products) {
+function totalCost(products) {
     let cartCost = localStorage.getItem('totalCost');
-    
-    console.log ("my cartcost is", cartCost);
-    console.log(typeof cartCost );
-    
+
+    console.log("my cartcost is", cartCost);
+    console.log(typeof cartCost);
+
     if (cartCost != null) {
         cartCost = parseInt(cartCost);
         localStorage.setItem("totalCost", cartCost +
-        products.price);
+            products.price);
     } else {
         localStorage.setItem("totalCost", products.price);
     }
@@ -98,11 +98,11 @@ function totalCost (products) {
 
 }
 
-function displayCart () {
+function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
-    let productContainer = document.querySelector 
-    (".products");
+    let productContainer = document.querySelector
+        (".products");
     let cartCost = localStorage.getItem('totalCost');
 
     console.log(cartItems);
@@ -117,14 +117,16 @@ function displayCart () {
             </div>
             <div class="price">${item.price}</div> DT
             <div class="quantity">
-                <ion-icon name="arrow-back-circle-outline"></ion-icon>
-                <span>${item.inCart}</span>
-                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                <ion-icon class="decrease" name="arrow-dropleft-circle"></ion-icon>
+                <span> ${item.inCart} </span>
+                <ion-icon class="increase" name="arrow-dropright-circle"></ion-icon>
             </div>
             <div class="total">
                 ${item.inCart * item.price} DT
             </div>
             `;
+
+
         });
 
         productContainer.innerHTML += `
@@ -136,8 +138,23 @@ function displayCart () {
                     ${cartCost} DT
                 </h4>
         `;
+        let incrs = document.querySelector('.increase');
+        let dcrs = document.querySelector('.decrease');
+        let quantity = document.querySelector('.quantity span');
+
+        incrs.addEventListener('click', () => {
+            quantity.innerHTML = parseInt(quantity.innerHTML) + 1;
+        });
+
+        dcrs.addEventListener('click', () => {
+            if(parseInt(quantity.innerHTML) == 1 ) {
+                alert(`can't perform action`);
+                return
+            }
+            quantity.innerHTML = parseInt(quantity.innerHTML) - 1;
+        });
     }
 }
 
-onLoadCartNumbers ();
-displayCart ();
+onLoadCartNumbers();
+displayCart();
