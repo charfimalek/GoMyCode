@@ -1,0 +1,68 @@
+{
+    "items":[
+        {
+            "sys": {"id": "1"},
+            "fields":{
+                "title": "queen panel bed",
+                "price": 150,
+                "image": {"fields":{"file":{"url": "./RES/bed1.jpg"}}}
+            }
+        },
+        {
+            "sys": {"id": "2"},
+            "fields":{
+                "title": "king panel bed",
+                "price": 160,
+                "image": {"fields":{"file":{"url": "./RES/bed2.jfif"}}}
+            }
+        },
+        {
+            "sys": {"id": "3"},
+            "fields":{
+                "title": "confortable bed",
+                "price": 170,
+                "image": {"fields":{"file":{"url": "./RES/bed3.webp"}}}
+            }
+        },
+        {
+            "sys": {"id": "4"},
+            "fields":{
+                "title": "dressing",
+                "price": 110,
+                "image": {"fields":{"file":{"url": "./RES/dressing.jpg"}}}
+            }
+        },
+        {
+            "sys": {"id": "5"},
+            "fields":{
+                "title": "lampe",
+                "price": 80,
+                "image": {"fields":{"file":{"url": "./RES/lampe.jpg"}}}
+            }
+        },
+        {
+            "sys": {"id": "6"},
+            "fields":{
+                "title": "porte chaussure",
+                "price": 90,
+                "image": {"fields":{"file":{"url": "./RES/porte chaussure.jpg"}}}
+            }
+        },
+        {
+            "sys": {"id": "7"},
+            "fields":{
+                "title": "table de nuit",
+                "price": 95,
+                "image": {"fields":{"file":{"url": "./RES/table de nuit.webp"}}}
+            }
+        },
+        {
+            "sys": {"id": "8"},
+            "fields":{
+                "title": "tapis",
+                "price": 105,
+                "image": {"fields":{"file":{"url": "./RES/tapis.jfif"}}}
+            }
+        },
+    ]
+}
