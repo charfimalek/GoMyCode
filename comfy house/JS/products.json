@@ -43,17 +43,17 @@
         {
             "sys": {"id": "6"},
             "fields":{
-                "title": "porte chaussure",
+                "title": "chaussure",
                 "price": 90,
-                "image": {"fields":{"file":{"url": "./RES/porte chaussure.jpg"}}}
+                "image": {"fields":{"file":{"url": "./RES/chaussure.jpg"}}}
             }
         },
         {
             "sys": {"id": "7"},
             "fields":{
-                "title": "table de nuit",
+                "title": "table",
                 "price": 95,
-                "image": {"fields":{"file":{"url": "./RES/table de nuit.webp"}}}
+                "image": {"fields":{"file":{"url": "./RES/table.webp"}}}
             }
         },
         {
@@ -63,6 +63,6 @@
                 "price": 105,
                 "image": {"fields":{"file":{"url": "./RES/tapis.jfif"}}}
             }
-        },
+        }
     ]
 }

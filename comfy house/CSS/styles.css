@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css? family=lato:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
     --primarycolor: #f09d51;
@@ -37,6 +37,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 1.5rem;
+    color: var(--mainblack);
 }
 .nav-icon {
     font-size: 1.5rem;
@@ -58,7 +59,7 @@ body {
 /* ------------ hero -------------*/
 .hero {
     min-height: calc(100vh - 60px);
-    background: url("./C:/RES/logonavbar.jpg") center/cover no-repeat;
+    background: url('../RES/logonavbar.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,6 +75,7 @@ body {
     text-transform: uppercase;
     letter-spacing: var(--mainspacing);
     margin-bottom: 3rem;
+    color: var(--mainblack);
 }
 .banner-btn {
     padding: 1rem 3rem;
@@ -101,6 +103,7 @@ body {
     margin-bottom: 5rem;
     text-transform: capitalize;
     letter-spacing: var(--mainspacing);
+    color: var(--mainblack); 
 }
 .products-center {
     width: 90vw;
@@ -202,12 +205,14 @@ body {
 .close-cart {
     font-size: 1.7rem;
     cursor: pointer;
+    color: var(--mainblack);
 }
 .cart h2 {
     text-transform: capitalize;
     text-align: center;
     letter-spacing: var(--mainspacing);
     margin-bottom: 2rem;
+    color: var(--mainblack);
 }
 
 /* ---------------- Cart Item ----------- */
@@ -217,6 +222,7 @@ body {
     grid-template-columns: auto 1fr auto;
     grid-column-gap: 1.5rem;
     margin: 1.5rem 0;
+    color: var(--mainblack);
 }
 .cart-item img {
     width: 75px;
@@ -226,6 +232,7 @@ body {
     font-size: 0.85rem;
     text-transform: capitalize;
     letter-spacing: var (var(--mainspacing));
+    color: var(--mainblack);
 }
 .cart-item h5 {
     margin: 0.5rem 0;
@@ -249,6 +256,7 @@ body {
     margin-top: 2rem;
     letter-spacing: var(--mainspacing);
     text-align: center;
+    color: var(--mainblack);
 }
 .cart-footer h3 {
     text-transform: capitalize;
